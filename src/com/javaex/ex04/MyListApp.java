@@ -1,7 +1,6 @@
 package com.javaex.ex04;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class MyListApp {
 
@@ -12,6 +11,7 @@ public class MyListApp {
 		Point p01 = new Point(3, 5);
 		Point p02 = new Point(13, 15);
 		Point p03 = new Point(113, 115);
+		Point p04 = new Point(1113, 1115);
 		Circle c01 = new Circle(5);
 
 		pList.add(p01);
@@ -47,6 +47,12 @@ public class MyListApp {
 			System.out.println(p.getX());
 			System.out.println(p.getY());
 		}
+
+		// p04 를 2번째(방번호 1번[1]째 추가)
+		// pList.add(p04);
+		pList.add(1, p04);
+		System.out.println(pList.toString());
+
 	}
 
 }
