@@ -18,10 +18,12 @@ public class Ex01 {
 			// 번호를 생성한다.
 			int num = (int) (Math.random() * 45) + 1;
 
-			//
+			// set에 add한다
 			iSet.add(num);
 
 		}
+
+		System.out.println("======================");
 		for (Integer num : iSet) {
 			System.out.println(num + "\t");
 		}
