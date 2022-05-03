@@ -17,15 +17,20 @@ public class PointApp {
 		pSet.add(p02);
 		pSet.add(p03);
 
+		/*
+		for(Point p :pSet) {
+			System.out.println(p.toString());
+		}
+		*/
 		System.out.println(pSet.size());
 		System.out.println(pSet.toString());
-		System.out.println("=============================");
+		System.out.println("------------------------");
 
-		Point p04 = new Point(7, 2);		// p02중복
+		Point p04 = new Point(3, 6);   // p02 중복
 		pSet.add(p04);
 		System.out.println(pSet.toString());
 
-		// hashCode();
+		// hashCode()
 		for (Point p : pSet) {
 			System.out.println(p.hashCode());
 		}
